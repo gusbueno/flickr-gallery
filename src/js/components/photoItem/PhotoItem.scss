@@ -1,0 +1,12 @@
+.photo-item {
+  width: 25%;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+}

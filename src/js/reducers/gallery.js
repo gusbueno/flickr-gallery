@@ -1,14 +1,20 @@
 'use strict'
 
-// import {  } from '../constants/ActionTypes'
+import { ON_PHOTOS_RECEIVED } from '../constants/ActionTypes'
 
 const initialState = {
   page: 1,
-  totalPages: null
+  pages: null,
+  photos: []
 }
 
 const gallery = (state = initialState, action) => {
   switch (action.type) {
+    case ON_PHOTOS_RECEIVED:
+      const pages = action.data.pages
+      const page = (action.data.page + 1) <= pages ? action.data.page + 1 : pages
+      const photos = action.data.photo
+      return { ...state, page, pages, photos }
     default:
       return state
   }
