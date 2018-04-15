@@ -25,7 +25,7 @@ export const requestPhotos = (term) => {
     const state = getState()
     const page = state.gallery.page
     dispatch(onPhotosRequest())
-    const [err, result] = await to(axios.get(`${BASE_URL}/?method=flickr.photos.search&api_key=${API_KEY}&text=${term}&page=${page}&format=json&nojsoncallback=1`))
+    const [err, result] = await to(axios.get(`${BASE_URL}/?method=flickr.photos.search&api_key=${API_KEY}&text=${term}&page=${page}&extras=owner_name&format=json&nojsoncallback=1`))
     err && console.log(err)
     result && dispatch(onPhotosReceived(result.data.photos))
   }

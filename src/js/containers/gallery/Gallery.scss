@@ -1,10 +1,18 @@
+body {
+  margin: 0;
+}
+
 .gallery {
   display: flex;
+  background-color: white;
 
   .photo-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     flex: 1;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
   }
 }
