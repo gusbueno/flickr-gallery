@@ -1,6 +1,7 @@
 'use strict'
 
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './PhotoItem.scss'
 
@@ -8,7 +9,7 @@ class PhotoItem extends PureComponent {
   render () {
     return (
       <div className={styles['photo-item']}>
-        <div className={styles['photo-wrapper']}>
+        <div className={styles['photo-wrapper']} onClick={() => this.props.onRequestPhotoDetail(this.props.photo)}>
           <img src={`https://farm${this.props.photo.farm}.staticflickr.com/${this.props.photo.server}/${this.props.photo.id}_${this.props.photo.secret}.jpg`} alt={this.props.photo.title} />
         </div>
         <div className={styles['photo-info']}>
@@ -20,6 +21,11 @@ class PhotoItem extends PureComponent {
       </div>
     )
   }
+}
+
+PhotoItem.propTypes = {
+  photo: PropTypes.object.isRequired,
+  onRequestPhotoDetail: PropTypes.func.isRequired
 }
 
 export default PhotoItem

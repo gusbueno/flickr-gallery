@@ -8,6 +8,7 @@ import thunk from 'redux-thunk'
 
 import rootReducer from './reducers'
 import Gallery from './containers/gallery/Gallery'
+import PhotoDetail from './containers/photoDetail/PhotoDetail'
 
 const store = createStore(
   rootReducer,
@@ -16,7 +17,10 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <Gallery />
+    <div>
+      <Gallery />
+      <PhotoDetail />
+    </div>
   </Provider>,
   document.getElementById('root')
 )

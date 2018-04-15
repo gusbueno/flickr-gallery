@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 import { requestPhotos } from '../../actions/gallery'
+import { requestPhotoDetail } from '../../actions/photoDetail'
 import styles from './Gallery.scss'
 import PhotoItem from '../../components/photoItem/PhotoItem'
 
@@ -15,7 +16,7 @@ class Gallery extends PureComponent {
 
   _renderPhotos () {
     return this.props.photos.map(photo => {
-      return <PhotoItem key={photo.id} photo={photo} />
+      return <PhotoItem key={photo.id} photo={photo} onRequestPhotoDetail={this.props.onRequestPhotoDetail} />
     })
   }
 
@@ -40,6 +41,9 @@ const mapDispatchToProps = (dispatch) => {
   return ({
     onRequestPhotos: (term) => {
       dispatch(requestPhotos(term))
+    },
+    onRequestPhotoDetail: (photo) => {
+      dispatch(requestPhotoDetail(photo))
     }
   })
 }
