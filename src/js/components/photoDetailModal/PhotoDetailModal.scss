@@ -1,0 +1,64 @@
+.photo-detail-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(white, 0.9);
+  padding: 20px 50px;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .photo-header {
+    display: flex;
+    justify-content: space-between;
+    .photo-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #373F51;
+    }
+
+    .close {
+      color: #3F70E2;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+
+  .photo-wrapper {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  .photo-info {
+    display: flex;
+    justify-content: space-between;
+
+    .info-group {
+      .label {
+        font-size: 12px;
+        color: #373F51;
+      }
+
+      .value {
+        font-size: 16px;
+        color: #373F51;
+        font-weight: bold;
+      }
+    }
+  }
+}
