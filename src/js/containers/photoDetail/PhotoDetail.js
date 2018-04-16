@@ -4,17 +4,21 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import styles from './PhotoDetail.scss'
 import { onClosePhotoDetail } from '../../actions/photoDetail'
+import PhotoDetailModal from '../../components/photoDetailModal/PhotoDetailModal'
 
 class PhotoDetail extends PureComponent {
+  componentDidMount () {
+    document.body.classList.toggle('modalOpened', this.props.showModal)
+  }
+
+  componentWillReceiveProps (nextProps) {
+    document.body.classList.toggle('modalOpened', nextProps.showModal)
+  }
+
   _showModal () {
     if (this.props.showModal) {
-      return (
-        <div className={styles['photo-detail']}>
-          photo detail
-        </div>
-      )
+      return <PhotoDetailModal photo={this.props.photo} onClosePhotoDetail={this.props.onClosePhotoDetail} />
     }
 
     return null

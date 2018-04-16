@@ -10,6 +10,9 @@ import rootReducer from './reducers'
 import Gallery from './containers/gallery/Gallery'
 import PhotoDetail from './containers/photoDetail/PhotoDetail'
 
+// load common styles
+import commonStyles from '../styles/common.scss'
+
 const store = createStore(
   rootReducer,
   applyMiddleware(thunk)

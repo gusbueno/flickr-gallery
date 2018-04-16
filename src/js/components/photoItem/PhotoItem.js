@@ -1,26 +1,24 @@
 'use strict'
 
-import React, { PureComponent } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import styles from './PhotoItem.scss'
 
-class PhotoItem extends PureComponent {
-  render () {
-    return (
-      <div className={styles['photo-item']}>
-        <div className={styles['photo-wrapper']} onClick={() => this.props.onRequestPhotoDetail(this.props.photo)}>
-          <img src={`https://farm${this.props.photo.farm}.staticflickr.com/${this.props.photo.server}/${this.props.photo.id}_${this.props.photo.secret}.jpg`} alt={this.props.photo.title} />
-        </div>
-        <div className={styles['photo-info']}>
-          <span className={styles['photo-title']}>{this.props.photo.title}</span>
-          <div className={styles['photo-owner-wrapper']}>
-            <a href={`https://www.flickr.com/photos/${this.props.photo.owner}/${this.props.photo.id}`} target='blank' className={styles['photo-owner-text']}>{this.props.photo.ownername}</a>
-          </div>
+const PhotoItem = ({ photo, onRequestPhotoDetail }) => {
+  return (
+    <div className={styles['photo-item']}>
+      <div className={styles['photo-wrapper']} onClick={() => onRequestPhotoDetail(photo)}>
+        <img src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`} alt={photo.title} />
+      </div>
+      <div className={styles['photo-info']}>
+        <span className={styles['photo-title']}>{photo.title}</span>
+        <div className={styles['photo-owner-wrapper']}>
+          <a href={`https://www.flickr.com/photos/${photo.owner}/${photo.id}`} target='blank' className={styles['photo-owner-text']}>{photo.ownername}</a>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 PhotoItem.propTypes = {
