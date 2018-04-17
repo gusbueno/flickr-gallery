@@ -11,8 +11,7 @@ const initialState = {
 const gallery = (state = initialState, action) => {
   switch (action.type) {
     case ON_PHOTOS_RECEIVED:
-      const pages = action.data.pages
-      const page = (action.data.page + 1) <= pages ? action.data.page + 1 : pages
+      const { page, pages } = action.data
       const photos = action.data.photo
       return { ...state, page, pages, photos }
     default:

@@ -1,6 +1,7 @@
 .gallery {
   display: flex;
   background-color: white;
+  flex-direction: column;
 
   .photo-list {
     display: flex;
