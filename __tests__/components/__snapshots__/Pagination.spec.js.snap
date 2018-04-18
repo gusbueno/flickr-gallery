@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> Component Pagination should match with the snapshot 1`] = `
+<div
+  className="pagination"
+>
+  <div
+    className="page-button current-page"
+    onClick={[Function]}
+  >
+    1
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    2
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    3
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    4
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    5
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    6
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    7
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    8
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    9
+  </div>
+  <div
+    className="page-button false"
+    onClick={[Function]}
+  >
+    10
+  </div>
+  <div
+    className="page-button"
+    onClick={[Function]}
+  >
+    Next
+  </div>
+</div>
+`;
