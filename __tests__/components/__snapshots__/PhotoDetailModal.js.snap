@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhotoDetailModal /> Component should match with the snapshot 1`] = `
+<div
+  className="photo-detail-modal"
+>
+  <div
+    className="photo-header"
+  >
+    <span
+      className="photo-title"
+    >
+      Title
+    </span>
+    <span
+      className="close"
+      onClick={[Function]}
+    >
+      Close
+    </span>
+  </div>
+  <div
+    className="photo-wrapper"
+  >
+    <img
+      alt="Title"
+      src="https://farm123.staticflickr.com/123/123_123.jpg"
+    />
+  </div>
+  <div
+    className="photo-info"
+  >
+    <div
+      className="info-group"
+    >
+      <span
+        className="label"
+      >
+        Owner: 
+      </span>
+      <span
+        className="value"
+      >
+        Pepe
+      </span>
+    </div>
+    <div
+      className="info-group"
+    >
+      <span
+        className="label"
+      >
+        Date taken: 
+      </span>
+      <span
+        className="value"
+      >
+        20/01/2018
+      </span>
+    </div>
+    <div
+      className="info-group"
+    >
+      <span
+        className="label"
+      >
+        Views: 
+      </span>
+      <span
+        className="value"
+      >
+        12
+      </span>
+    </div>
+    <div
+      className="info-group"
+    >
+      <span
+        className="label"
+      >
+        Comments: 
+      </span>
+      <span
+        className="value"
+      >
+        12
+      </span>
+    </div>
+    <a
+      href="https://awesomeurl.com/my/photo"
+      target="blank"
+    >
+      Full size
+    </a>
+  </div>
+</div>
+`;

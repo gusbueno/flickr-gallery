@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Pagination /> Component Pagination should match with the snapshot 1`] = `
+exports[`<Pagination /> Component should match with the snapshot 1`] = `
 <div
   className="pagination"
 >
