@@ -16,7 +16,7 @@ describe('Gallery reducer', () => {
     expect(gallery(undefined, {})).toEqual(initialState)
   })
 
-  it('should update page, pages, and add photos when ON_PHOTOS_RECEIVED action fired', () => {
+  it('should update page, pages, and add photos when ON_PHOTOS_RECEIVED action is fired', () => {
     const data = {
       page: 2,
       pages: 200,
