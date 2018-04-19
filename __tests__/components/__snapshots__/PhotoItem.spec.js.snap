@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhotoItem /> Component should match with the snapshot 1`] = `
+<div
+  className="photo-item"
+>
+  <div
+    className="photo-wrapper"
+    onClick={[Function]}
+  >
+    <img
+      alt="Title"
+      src="https://farm123.staticflickr.com/123/123_123.jpg"
+    />
+  </div>
+  <div
+    className="photo-info"
+  >
+    <span
+      className="photo-title"
+    >
+      Title
+    </span>
+    <div
+      className="photo-owner-wrapper"
+    >
+      <a
+        className="photo-owner-text"
+        href="https://www.flickr.com/photos/123/123"
+        target="blank"
+      >
+        Pepe
+      </a>
+    </div>
+  </div>
+</div>
+`;

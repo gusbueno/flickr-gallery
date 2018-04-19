@@ -1,0 +1,46 @@
+.photo-item {
+  width: 24%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #CBDDEF;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px grey;
+
+  .photo-wrapper {
+    border-radius: 5px;
+    background-color: #CBDDEF;
+    position: relative;
+    max-height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+
+  .photo-info {
+    padding-top: 10px;
+
+    .photo-title {
+      padding-top: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      
+    }
+
+    .photo-owner-wrapper {
+      text-align: right;
+
+      .photo-owner-text {
+        font-size: 12px;
+      }
+    }
+  }
+}

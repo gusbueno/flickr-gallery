@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Gallery /> container should match with the snapshot 1`] = `
+<div
+  className="gallery"
+>
+  <div
+    className="pagination"
+  >
+    <div
+      className="page-button current-page"
+      onClick={[Function]}
+    >
+      1
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      2
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      3
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      4
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      5
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      6
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      7
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      8
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      9
+    </div>
+    <div
+      className="page-button false"
+      onClick={[Function]}
+    >
+      10
+    </div>
+    <div
+      className="page-button"
+      onClick={[Function]}
+    >
+      Next
+    </div>
+  </div>
+  <div
+    className="photo-list"
+  >
+    <div
+      className="photo-item"
+    >
+      <div
+        className="photo-wrapper"
+        onClick={[Function]}
+      >
+        <img
+          alt="Title"
+          src="https://farm123.staticflickr.com/123/123_123.jpg"
+        />
+      </div>
+      <div
+        className="photo-info"
+      >
+        <span
+          className="photo-title"
+        >
+          Title
+        </span>
+        <div
+          className="photo-owner-wrapper"
+        >
+          <a
+            className="photo-owner-text"
+            href="https://www.flickr.com/photos/123/123"
+            target="blank"
+          >
+            Pepe
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
