@@ -7,7 +7,6 @@ import { API_KEY, BASE_URL } from '../constants/FlickrData'
 import { to } from '../utils'
 
 export const onPhotoDetailReceived = (photo) => {
-  console.log(photo)
   return {
     type: ON_PHOTO_DETAIL_RECEIVED,
     photo

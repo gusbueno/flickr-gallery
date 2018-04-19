@@ -13,7 +13,6 @@ export const onPhotosRequest = () => {
 }
 
 export const onPhotosReceived = (data) => {
-  console.log(data)
   return {
     type: ON_PHOTOS_RECEIVED,
     data
