@@ -25,7 +25,6 @@ class Gallery extends PureComponent {
   }
 
   _onNavigateToPage (page) {
-    console.log(page)
     this.props.onRequestPhotos(this.state.term, page)
   }
 

@@ -5,6 +5,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import renderer from 'react-test-renderer'
+
 import Pagination from '../../src/js/components/pagination/Pagination'
 
 describe('<Pagination /> Component', () => {
