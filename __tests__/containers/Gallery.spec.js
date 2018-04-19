@@ -52,7 +52,6 @@ describe('<Gallery /> container', () => {
   )
 
   it('should exists', () => {
-    console.log(galleryShallow.instance())
     expect(galleryShallow.length).toEqual(1)
   })
 })
