@@ -1,5 +1,3 @@
-'use strict'
-
 import axios from 'axios'
 
 import { ON_PHOTOS_REQUEST, ON_PHOTOS_RECEIVED } from '../constants/ActionTypes'

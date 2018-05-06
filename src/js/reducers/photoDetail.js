@@ -1,5 +1,3 @@
-'use strict'
-
 import { ON_PHOTO_DETAIL_RECEIVED, ON_CLOSE_PHOTO_DETAIL } from '../constants/ActionTypes'
 
 const initialState = {
