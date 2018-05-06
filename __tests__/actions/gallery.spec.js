@@ -1,5 +1,3 @@
-'use strict'
-
 /* global describe, it, expect */
 
 import configureMockStore from 'redux-mock-store'

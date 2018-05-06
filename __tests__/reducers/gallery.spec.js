@@ -1,5 +1,3 @@
-'use strict'
-
 /* global describe, it, expect */
 
 import { ON_PHOTOS_RECEIVED } from '../../src/js/constants/ActionTypes'
