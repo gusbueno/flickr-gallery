@@ -15,7 +15,7 @@ describe('PhotoDetail reducer', () => {
 
   it('should set showModal as true and set data into photo prop when ON_PHOTO_DETAIL_RECEIVED action is fired', () => {
     const photo = {
-      title: 'Ireland',
+      title: 'Galway',
       id: 1
     }
     expect(photoDetail(initialState, { type: ON_PHOTO_DETAIL_RECEIVED, photo })).toEqual({ ...initialState, showModal: true, photo })

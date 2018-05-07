@@ -13,7 +13,7 @@ const mockStore = configureMockStore(middlewares)
 
 describe('PhotoDetail actions', () => {
   it('should dispatch ON_PHOTO_DETAIL_RECEIVED action when onPhotoDetailReceived is fired', () => {
-    const photo = { title: 'Ireland', id: 2 }
+    const photo = { title: 'Galway', id: 2 }
     const expectedActions = [
       { type: ON_PHOTO_DETAIL_RECEIVED, photo }
     ]
@@ -32,7 +32,7 @@ describe('PhotoDetail actions', () => {
   })
 
   it('should dispatch ON_PHOTO_DETAIL_RECEIVED action with photo data when requestPhotoDetail is fired', () => {
-    const photo = { title: 'Ireland', id: 2 }
+    const photo = { title: 'Galway', id: 2 }
     const expectedActions = [
       { type: ON_PHOTO_DETAIL_RECEIVED, photo }
     ]
