@@ -7,7 +7,7 @@
     "build:server": "webpack --mode production --config ./server/webpack.config.js",
     "build": "webpack --mode production",
     "start:server": "node server/build/bundle.js",
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --port 3000 --mode development",
     "test": "jest",
     "test:server": "mocha --require babel-polyfill --require babel-core/register --recursive server/test --exit"
   },
