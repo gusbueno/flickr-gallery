@@ -13,3 +13,5 @@ app.get('/api/photos', photoProvider.getPhotos)
 app.get('/api/photo/detail', photoProvider.getPhotoDetail)
 
 app.listen(8080, () => console.log('server running on port 8080!'))
+
+export default app

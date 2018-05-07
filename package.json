@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "start:server": "node server/build/bundle.js",
     "start": "webpack-dev-server --mode development",
-    "test": "jest"
+    "test": "jest",
+    "test:server": "mocha --require babel-polyfill --require babel-core/register --recursive server/test --exit"
   },
   "repository": {
     "type": "git",
