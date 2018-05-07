@@ -6,7 +6,6 @@ import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 
 import { ON_PHOTO_DETAIL_RECEIVED, ON_CLOSE_PHOTO_DETAIL } from '../../src/js/constants/ActionTypes'
-import { BASE_URL, API_KEY } from '../../src/js/constants/FlickrData'
 import * as actions from '../../src/js/actions/photoDetail'
 
 const middlewares = [thunk]
@@ -39,7 +38,7 @@ describe('PhotoDetail actions', () => {
     ]
 
     const mock = new MockAdapter(axios)
-    mock.onGet(`${BASE_URL}/?method=flickr.photos.getInfo&api_key=${API_KEY}&photo_id=2&secret=123&format=json&nojsoncallback=1`).reply(200, {
+    mock.onGet(`http://localhost:8080/api/photo/detail?id=2&secret=123`).reply(200, {
       photo
     })
 
