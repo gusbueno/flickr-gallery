@@ -1,5 +1,3 @@
-'use strict'
-
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
@@ -14,7 +12,7 @@ class Gallery extends PureComponent {
   constructor (props) {
     super(props)
     this.state = {
-      term: 'ireland' // default term: 'ireland'
+      term: 'galway' // default term: 'galway'
     }
 
     this._onNavigateToPage = this._onNavigateToPage.bind(this)

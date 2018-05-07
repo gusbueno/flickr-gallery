@@ -1,5 +1,3 @@
-'use strict'
-
 /* global describe, it, expect, jest */
 
 import React from 'react'

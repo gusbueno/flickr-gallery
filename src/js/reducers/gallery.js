@@ -1,5 +1,3 @@
-'use strict'
-
 import { ON_PHOTOS_RECEIVED } from '../constants/ActionTypes'
 
 const initialState = {

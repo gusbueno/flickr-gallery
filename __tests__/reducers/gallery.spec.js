@@ -1,5 +1,3 @@
-'use strict'
-
 /* global describe, it, expect */
 
 import { ON_PHOTOS_RECEIVED } from '../../src/js/constants/ActionTypes'
@@ -21,7 +19,7 @@ describe('Gallery reducer', () => {
       page: 2,
       pages: 200,
       photo: [{
-        name: 'Ireland',
+        name: 'Galway',
         id: 1
       }]
     }
